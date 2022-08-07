@@ -1,0 +1,24 @@
+white_list = [
+    "msedge.exe",
+    "WebViewHost.exe",
+    "ApplicationFrameHost.exe",
+    "taskmgr.exe",
+    "procmon.exe",
+    "procmon64.exe",
+    "Widgets.exe",
+    "dwm.exe",
+    "explorer.exe",
+    "ShellExperienceHost.exe",
+    "StartMenuExperienceHost.exe",
+    "SearchHost.exe",
+    "sihost.exe",
+    "fontdrvhost.exe",
+    "ChsIME.exe",
+    "ctfmon.exe",
+    "csrss.exe",
+    "smss.exe",
+    "svchost.exe",
+    "WUDFRd.exe",
+]
+filter = '(?-u)^\b$'
+debug = true

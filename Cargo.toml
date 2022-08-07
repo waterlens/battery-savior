@@ -1,0 +1,40 @@
+[package]
+name = "battery-savior"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "A utility helping you save your battery consumption"
+repository = "https://github.com/waterlens/battery-savior/"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+toml = "0.5"
+winapi = { version = "0.3", features = ["winuser"] }
+wineventhook = "0.5.0"
+tokio = { version = "1.20", features = ["full"] }
+ntapi = { version = "0.3.7", features = ["impl-default", "user"] }
+windows = { version = "0.39.0", features = [
+    "Win32_Foundation",
+    "Win32_System_Threading",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_ProcessStatus",
+    "Win32_System_Console",
+] }
+serde = { version = "1.0", features = ["serde_derive"] }
+regex = "1"
+env_logger = "0.9"
+log = "0.4"
+wintrap = "0.3"
+tray-item = "0.7"
+
+[build-dependencies]
+windres = "*"
+
+[profile.release]
+opt-level = "z" 
+strip = "symbols"
+lto = "fat"
+panic = "abort"
+codegen-units = 1
