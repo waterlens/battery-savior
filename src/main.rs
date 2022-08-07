@@ -6,7 +6,6 @@ use ntapi::ntrtl::RtlGetVersion;
 use regex::Regex;
 use serde::Deserialize;
 use std::{
-    borrow::Borrow,
     collections::HashSet,
     ffi::OsString,
     mem::{size_of, size_of_val},
