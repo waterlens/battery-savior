@@ -3,7 +3,7 @@ name = "battery-savior"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-description = "A utility helping you save your battery consumption"
+description = "A utility helping you save your power consumption of your PC"
 repository = "https://github.com/waterlens/battery-savior/"
 
 
